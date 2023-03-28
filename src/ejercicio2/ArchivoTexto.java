@@ -8,6 +8,10 @@ public class ArchivoTexto extends Archivo {
 		super(nombre, peso, localizacion, abierto);
 		this.codificacion = codificacion;
 	}
+	
+	public boolean isUTF8() {
+		return this.codificacion.equalsIgnoreCase("UTF-8");
+	}
 
 	public void cifrar() {
 		System.out.println("Archivo cifrado");

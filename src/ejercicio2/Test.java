@@ -10,6 +10,8 @@ public class Test {
 		c.agregarArchivo( new ArchivoPDF("Libro de Java",0.0,"",true,"123456") );
 		
 		c.mostrarArchivos();
+		System.out.println( "Archivo de texto: " + c.cantArchivosDeTexto() );
+		c.cifrarArchivos();
 	}
 
 }
